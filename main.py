@@ -44,7 +44,7 @@ We also saw papers scattered on the cabinet, which also served as a counter to w
 Input text:
 {input}
 
-Rewrite the input text to proper American English. The target writing style is for an argriculture newspaper article. The paragraph count should match the original.:
+Rewrite the input text to proper American English targing the writing style of the New York Times newspaper article but written by the Japan Agricultural newspaper. The paragraph count should match the original.:
 Output text:
 
 """
@@ -55,7 +55,7 @@ def merge_prompt_builder(original, alternatives):
     prompt = f"Original:\n{original}\n\n"
     for i in range(len(alternatives)):
         prompt += f"Version {i+1}:\n{alternatives[i]}\n\n"
-    prompt += "Take the drafts and write the merged version. The writing should look like a sentence from an argriculture newspaper article." \
+    prompt += "Take the drafts and write the merged version. The writing should look like a sentence from a newspaper article. Making sure romanji words are correctly converted." \
             + "\nFinal Version:\n"
     #print("prompt\n", prompt, "\n\n")
     return prompt
@@ -68,7 +68,7 @@ Translated:
 {dirty_copy}
 
 
-Fix any writing inconsistencies for the above translated an argriculture newspaper article. Be sure to consistently use abbreviations correctly and to only expand it once. Numbers should remain consistent. The paragraph count should match the original.
+Fix any writing inconsistencies for the above translated from the Japan Agricultural newspaper article. Names should be abbreviated once; do not show the full name after abbreviated. Numbers should remain consistent. The paragraph count should match the original.
 Fixed Version:
 """
     #print("prompt\n", prompt, "\n\n")
@@ -98,7 +98,7 @@ def translate(input_text):
     response = openai.Completion.create(
             model="text-davinci-003",
             prompt=translate_prompt_builder(input_text),
-            temperature=0.5,
+            temperature=0.2,
             max_tokens=1000,
         )
     return response.choices[0].text
@@ -107,7 +107,7 @@ def merge(sentenses_tuple):
     response = openai.Completion.create(
             model="text-davinci-003",
             prompt=merge_prompt_builder(sentenses_tuple[0], sentenses_tuple[1:]),
-            temperature=0.2,
+            temperature=0.4,
             max_tokens=1000,
         )
     return response.choices[0].text
