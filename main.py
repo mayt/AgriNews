@@ -5,10 +5,13 @@ import requests
 import openai
 from dotenv import load_dotenv
 import itertools
+import deepl
 
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
+deepl_api_key = os.getenv("DEEPL_API_KEY")
+deepl_translator = deepl.Translator(deepl_api_key)
 
 def translate_prompt_builder(input):
     prompt =  f"""Input text:
@@ -126,11 +129,19 @@ def main():
     parser.add_argument('url', help='url to parse')
     parser.add_argument('--revisions', default=5, help='revisions to generate', type=int)
     parser.add_argument('-v', "--verbose", help='print verbose',action="store_true")
+    parser.add_argument("--deepl", help='use deepl',action="store_true")
 
 
     opt = parser.parse_args()
     orig_text = get_original_text(opt.url)
-    
+
+    deepl_text = ""
+    if opt.deepl:
+        deepl_text = deepl_translator.translate_text(orig_text, target_lang="EN-US")
+        if (opt.verbose):
+            print(f"deepl_text\n", deepl_text, "\n\n")
+        else:
+            print("Deepl translation done")
     versions = []
     for i in range(opt.revisions):
         translated_text = translate(orig_text)
@@ -142,7 +153,8 @@ def main():
         versions.append(translated_text.split("\n\n"))
 
     merged_text = ""
-    for i, sentenses_tuple in enumerate(itertools.zip_longest(orig_text.split("\n\n"), *versions, fillvalue="")):
+    zip_tuple =  (orig_text.split("\n\n"), deepl_text.text.split('\n\n'), *versions) if opt.deepl else (orig_text.split("\n\n"), *versions)
+    for i, sentenses_tuple in enumerate(itertools.zip_longest(*zip_tuple, fillvalue="")):
         merged = merge(sentenses_tuple)
         if (opt.verbose):
             print(f"merged text \n", merged, "\n\n")
