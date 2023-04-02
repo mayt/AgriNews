@@ -23,7 +23,7 @@ deepl_translator = deepl.Translator(deepl_api_key)
 
 
 def nouns_extraction(text, model="gpt-3.5-turbo"):
-    system_message_prompt = """Your job is to pick out all proper nouns, people's names, places' name, brand names, quoted names, and technical jargon in Japanese for your peer translator. You will attempt to translate the words.
+    system_message_prompt = """Your job is to pick out all proper nouns, people's names, places' name, brand names, and quoted names in Japanese for your peer translator. You will attempt to translate the words.
 
 For companies, use the romanji name. For example, "明治生命" => "Meiji Life Insurance Co.".
 
