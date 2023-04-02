@@ -1,0 +1,8 @@
+農水省=Ministry of Agriculture, Forestry and Fisheries (MAFF)
+「農泊」=“Nouhaku”
+インバウンド=Inbound
+ＪＡグループ=JA Group
+１９年度=2019
+２０年度=2020
+２１年度=2021
+ＪＮＴＯ=Japan National Tourism Organization

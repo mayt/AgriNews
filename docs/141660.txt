@@ -1,0 +1,8 @@
+ＪＡ全農=JA Zen-Noh
+ＪＲ貨物=JR Freight
+全農号=Zen-Noh Express
+２０２４年問題=2024 Problem
+モーダルシフト=Modal Shift
+パレット=Pallet
+フレコン=Flexible Container
+コンテナ=Container

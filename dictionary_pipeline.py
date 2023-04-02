@@ -82,12 +82,12 @@ def main():
     if opt.regenerate_dict:
         nouns = nouns_extraction(orig_text, model=opt.model)
         print(nouns)
-        with open(f"{opt.url.split('/')[-1]}.txt", "w") as f:
+        with open(f"./docs/{opt.url.split('/')[-1]}.txt", "w") as f:
             f.write(nouns)
         print(f"Dictionary generated under {opt.url.split('/')[-1]}.txt")
         input("Press Enter to continue...")
 
-    with open(f"{opt.url.split('/')[-1]}.txt") as f:
+    with open(f"./docs/{opt.url.split('/')[-1]}.txt") as f:
         loaded_dict = f.readlines()
     translation = translate_extraction(orig_text, loaded_dict, model=opt.model)
     print("First pass:")
