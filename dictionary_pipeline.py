@@ -29,21 +29,11 @@ For companies, use the romanji name. For example, "明治生命" => "Meiji Life 
 
 You will respond in the following format:
 
-Low confidence:
-農泊=Nouhaku (Agritourism)
-
-Proper nouns:
-農水省=Ministry of Agriculture, Forestry and Fisheries (MAFF)
-
-Person Names:
-
-Places:
-
-Companies:
-幸南食糧=Kounan Shokuryo Co.
-
-Others:
-鶏がゆ=chicken porridge
+Japanese,English,Abbrivation,Romanji,Type
+農泊,Nouhaku (Agritourism),,Nouhaku,Proper Noun
+農水省,Ministry of Agriculture, Forestry and Fisheries,(MAFF),Nousuishou,Government Department
+幸南食糧,Kounan Shokuryo Co.,,Kounan Shokuryo,Company
+鶏がゆ,chicken porridge,,tori kayu,Food
 
 """
     message = [

@@ -1,8 +1,37 @@
+Low confidence:
+農泊=Nouhaku (Agritourism)
+
+Proper nouns:
 農水省=Ministry of Agriculture, Forestry and Fisheries (MAFF)
-「農泊」=“Nouhaku”
-インバウンド=Inbound
+日本政府観光局=Japan National Tourism Organization (JNTO)
+
+Companies:
 ＪＡグループ=JA Group
-１９年度=2019
-２０年度=2020
-２１年度=2021
-ＪＮＴＯ=Japan National Tourism Organization
+
+Others:
+訪日客=foreign visitors to Japan
+インバウンド=inbound
+コロナ禍=COVID-19 pandemic
+ＳＮＳ=social networking sites
+農泊ネット=Nouhaku Net (Agritourism Net)
+
+I apologize for the oversight. Here are all the low-confidence translations, including the ones I missed:
+
+Low confidence:
+農泊=Nouhaku (Agritourism)
+都市農村交流課=Urban and Rural Exchange Division (low confidence)
+インバウンド重点受入地区=Inbound Priority Acceptance District (low confidence, tentative name)
+
+Proper nouns:
+農水省=Ministry of Agriculture, Forestry and Fisheries (MAFF)
+日本政府観光局=Japan National Tourism Organization (JNTO)
+
+Companies:
+ＪＡグループ=JA Group
+
+Others:
+訪日客=foreign visitors to Japan
+インバウンド=inbound
+コロナ禍=COVID-19 pandemic
+ＳＮＳ=social networking sites
+農泊ネット=Nouhaku Net (Agritourism Net)

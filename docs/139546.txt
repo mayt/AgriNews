@@ -1,0 +1,22 @@
+Low confidence:
+
+Proper nouns:
+財務省=Ministry of Finance
+新型コロナウイルス=Novel Coronavirus
+エクアドル=Ecuador
+
+Person Names:
+
+Places:
+中国=China
+米国=United States
+ベルギー=Belgium
+欧州=Europe
+
+Companies:
+
+Others:
+ジャガイモ=potato
+マッシュポテト=mashed potato
+エダマメ=edamame
+ブロッコリー=broccoli

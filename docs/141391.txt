@@ -1,12 +1,11 @@
 東日本大震災=Great East Japan Earthquake
 東京電力福島第１原子力発電所事故=Fukushima Daiichi Nuclear Power Plant Accident
+福島県=Fukushima Prefecture
+双葉町=Futaba Town
 ＪＡ福島さくら=JA Fukushima Sakura
-福島県双葉町=Fukushima Prefecture, Futaba Town
 旧JAふたば北部営農センター=Former JA Futaba Northern Agricultural Center
-田中宏課長=Hiroshi Tanaka
-田中課長=Tanaka
+田中宏課長=Tanaka Hiroshi Section Chief
 カントリーエレベーター=Country Elevator
-事業推進大会=Business Promotion Conference
 双葉カントリーエレベーター=Futaba Country Elevator
 ＨＡＷＡＩＩ=Hawaii
-染谷臨太郎=Rintaro Sometani
+Yes, those are all the proper nouns, people's names, places' names, brand names, and quoted names in Japanese that need to be translated for your peer translator.

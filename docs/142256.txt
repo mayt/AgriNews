@@ -1,0 +1,22 @@
+Low confidence:
+
+Proper nouns:
+
+Person Names:
+
+Places:
+愛知=Aichi
+西三河=Nishi Mikawa
+西尾桜町=Nishio Sakuramachi
+西尾市=Nishio City
+
+Companies:
+ＪＡ西三河=JA Nishi Mikawa
+スギ薬局=Sugi Pharmacy
+愛知県=Aichi Prefecture
+
+Others:
+ウェルネス=Wellness
+地産地消=local production and consumption
+管理栄養士=registered dietitian
+食育=food education
